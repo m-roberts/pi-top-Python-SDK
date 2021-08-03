@@ -2,7 +2,7 @@ from enum import Enum
 from threading import Lock
 
 from .capture_actions import CaptureActions
-from pitop.pma.common import type_check
+from pitop_pma.common import type_check
 
 
 class FrameHandler:

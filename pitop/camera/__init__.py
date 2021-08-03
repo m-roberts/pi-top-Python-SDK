@@ -1,1 +1,1 @@
-from .camera import Camera
+from .package.pitop.camera import *
