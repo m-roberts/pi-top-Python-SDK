@@ -1,8 +1,8 @@
 # Top-level
-from .system.pitop import Pitop
+from pitop.system.pitop import Pitop
 
 # PMA
-from .pma import (
+from pitop.pma import (
     Button,
     Buzzer,
     LED,
@@ -17,22 +17,22 @@ from .pma import (
     ServoMotorSetting as ServoMotorState,
 )
 
-from .pma.parameters import (
+from pitop.pma.parameters import (
     ForwardDirection,
     Direction,
     BrakingType,
 )
 
 # Robotics
-from .robotics.drive_controller import DriveController
-from .robotics.pan_tilt_controller import PanTiltController
-from .robotics.tilt_roll_head_controller import TiltRollHeadController
-from .robotics.pincer_controller import PincerController
-from .robotics.configurations import (
+from pitop.robotics.drive_controller import DriveController
+from pitop.robotics.pan_tilt_controller import PanTiltController
+from pitop.robotics.tilt_roll_head_controller import TiltRollHeadController
+from pitop.robotics.pincer_controller import PincerController
+from pitop.robotics.configurations import (
     alex_config,
     AlexRobot,  # deprecated
 )
 
 # System Devices
-from .camera import Camera
-from .keyboard import KeyboardButton
+from pitop.camera import Camera
+from pitop.keyboard import KeyboardButton
