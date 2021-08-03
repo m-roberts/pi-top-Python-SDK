@@ -1,7 +1,7 @@
 from json import load
 from pathlib import Path
 
-from pitop import Pitop
+from pitop.system.pitop import Pitop
 
 
 def __load_json(filename):

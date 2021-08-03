@@ -9,11 +9,10 @@ if not sys.version_info >= (3, 7):
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 
-# use mock version
 __version__ = '0.0.1'
 assert __version__ != ""
 
-__project__ = "pitop.robotics"
+__project__ = "pitop"
 __author__ = "pi-top"
 __author_email__ = "deb-maintainers@pi-top.com"
 
@@ -37,14 +36,43 @@ __classifiers__ = [
 __keywords__ = [
     "pi-top",
     "raspberrypi",
-    "battery",
+    "gpio",
 ]
 
 __requires__ = [
-    "pitop.system==0.0.1~MOCK",
-    "pitop.pma==0.0.1~MOCK",
-    "pitop.core==0.0.1~MOCK",
-    "simple_pid>=0.2.4,<0.3",
+    ###############
+    # Subpackages #
+    ###############
+    "pitop.system==0.0.1",
+    "pitop.core==0.0.1",
+    "pitop.pma==0.0.1",
+    "pitop.camera==0.0.1",
+    "pitop.keyboard==0.0.1",
+
+    ####################################
+    # Utilities - functions, IDs, etc. #
+    ####################################
+    "pitopcommon>=0.8.8,<0.9.0",
+
+    #########
+    # PROTO #
+    #########
+    # To use GPIO & components
+    "gpiozero>=1.6.2,<1.7",
+
+    #########
+    # Pulse #
+    #########
+    "pyserial>=3.4,<3.5",
+
+    #############
+    # Webserver #
+    #############
+    "flask>=1.0.2,<1.1",
+    "flask-cors>=3.0.7,<3.1",
+    "flask-sockets>=0.2.1,<0.3",
+    "gevent>=1.3.7,<1.4",
+    "gevent-websocket>=0.10.1,<0.11.0",
 ]
 
 
