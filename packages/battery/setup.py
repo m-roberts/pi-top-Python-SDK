@@ -3,6 +3,9 @@
 import os
 import sys
 from setuptools import setup, find_packages
+from ...shared import dependencies, __version__
+
+assert __version__ != ""
 
 if not sys.version_info >= (3, 7):
     raise ValueError("This package requires Python 3.7 or above")
@@ -41,7 +44,7 @@ __keywords__ = [
 ]
 
 __requires__ = [
-    "pitopcommon>=0.8.8,<0.9.0",
+    dependencies['pitopcommon'],
 ]
 
 

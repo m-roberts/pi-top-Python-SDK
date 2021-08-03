@@ -42,6 +42,7 @@ __keywords__ = [
 
 __requires__ = [
     "pitopcommon>=0.8.8,<0.9.0",
+    "pynput>=1.4.2,<1.5",
 ]
 
 

@@ -44,6 +44,7 @@ __requires__ = [
     "pitopcommon>=0.8.8,<0.9.0",
     "pitop.core==0.0.1~MOCK",
     "gpiozero>=1.6.2,<1.7",
+    "numpy>=1.16.0,<1.17",
 ]
 
 

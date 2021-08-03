@@ -43,8 +43,18 @@ __keywords__ = [
 __requires__ = [
     "pitopcommon>=0.8.8,<0.9.0",
     "pitop.core==0.0.1~MOCK",
-    "pitop.pma==0.0.1~MOCK"
-    "pitop.processing==0.0.1~MOCK"
+    "pitop.pma==0.0.1~MOCK",
+    "pitop.processing==0.0.1~MOCK",
+    "imageio>=2.4.1,<2.5",
+    "numpy>=1.16.0,<1.17",
+    "Pillow>=5.4.0,<5.5",
+    # Camera communication
+    # Release version is '0.1a2', but Debian package is '0.1.2'
+    # so we allow for both here
+    #
+    # TODO: build '0.1~a2' Debian package
+    "PyV4L2Camera>=0.1a2,<0.2",
+    "PyV4L2Camera>=0.1a2,<0.2",
 ]
 
 
