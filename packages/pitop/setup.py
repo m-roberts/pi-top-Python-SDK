@@ -39,6 +39,11 @@ __keywords__ = [
     "gpio",
 ]
 
+__extra_requires__ = {
+    "computer_vision": ["opencv"],
+    "doc": ["sphinx"],
+}
+
 __requires__ = [
     ###############
     # Subpackages #
@@ -100,6 +105,7 @@ def main():
             include_package_data=True,
             platforms=__platforms__,
             install_requires=__requires__,
+            extras_require=__extra_requires__,
         )
 
 
