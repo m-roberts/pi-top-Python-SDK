@@ -3,17 +3,13 @@
 import os
 import sys
 from setuptools import setup, find_packages
-from ...shared import dependencies, __version__
-
-assert __version__ != ""
 
 if not sys.version_info >= (3, 7):
     raise ValueError("This package requires Python 3.7 or above")
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 
-# use mock version
-__version__ = '0.0.1'
+__version__ = os.environ.get('CURRENT_VERSION')
 assert __version__ != ""
 
 __project__ = "pitop.battery"
@@ -44,7 +40,7 @@ __keywords__ = [
 ]
 
 __requires__ = [
-    dependencies['pitopcommon'],
+    "pitopcommon>=0.8.8,<0.9.0",
 ]
 
 

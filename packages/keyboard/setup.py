@@ -9,8 +9,7 @@ if not sys.version_info >= (3, 7):
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 
-# use mock version
-__version__ = '0.0.1~MOCK'
+__version__ = os.environ.get('CURRENT_VERSION')
 assert __version__ != ""
 
 __project__ = "pitop.keyboard"

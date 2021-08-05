@@ -9,7 +9,7 @@ if not sys.version_info >= (3, 7):
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 
-__version__ = "0.0.1"
+__version__ = os.environ.get('CURRENT_VERSION')
 assert __version__ != ""
 
 __project__ = "pitopcli"
@@ -40,11 +40,11 @@ __keywords__ = [
 ]
 
 __requires__ = [
-    "pitop.battery=0.0.1",
-    "pitop.system=0.0.1",
-    "pitop.display=0.0.1",
-    "pitop.pma=0.0.1",
-    "pitop.miniscreen=0.0.1",
+    f"pitop.battery={__version__}",
+    f"pitop.system={__version__}",
+    f"pitop.display={__version__}",
+    f"pitop.pma={__version__}",
+    f"pitop.miniscreen={__version__}",
     "pitopcommon>=0.8.8,<0.9.0",
 ]
 

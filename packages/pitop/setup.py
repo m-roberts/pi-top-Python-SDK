@@ -9,7 +9,7 @@ if not sys.version_info >= (3, 7):
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 
-__version__ = '0.0.1'
+__version__ = os.environ.get('CURRENT_VERSION')
 assert __version__ != ""
 
 __project__ = "pitop"
@@ -43,11 +43,13 @@ __requires__ = [
     ###############
     # Subpackages #
     ###############
-    "pitop.system==0.0.1",
-    "pitop.core==0.0.1",
-    "pitop.pma==0.0.1",
-    "pitop.camera==0.0.1",
-    "pitop.keyboard==0.0.1",
+    f"pitop.system=={__version__}",
+    f"pitop.core=={__version__}",
+    f"pitop.pma=={__version__}",
+    f"pitop.camera=={__version__}",
+    f"pitop.keyboard=={__version__}",
+    f"pitop.robotics=={__version__}",
+    f"pitop.processing=={__version__}",
 
     ####################################
     # Utilities - functions, IDs, etc. #

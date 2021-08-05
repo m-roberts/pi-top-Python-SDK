@@ -9,8 +9,7 @@ if not sys.version_info >= (3, 7):
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 
-# use mock version
-__version__ = '0.0.1~MOCK'
+__version__ = os.environ.get('CURRENT_VERSION')
 assert __version__ != ""
 
 __project__ = "pitop.miniscreen"
@@ -41,7 +40,7 @@ __keywords__ = [
 ]
 
 __requires__ = [
-    "pitop.core==0.0.1~MOCK",
+    f"pitop.core=={__version__}",
     "pitopcommon>=0.8.8,<0.9.0",
     "Pillow>=5.4.0,<5.5",
     "luma.core>=2.3.1,<2.4",
