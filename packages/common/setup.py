@@ -12,7 +12,7 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 __version__ = os.environ.get('CURRENT_VERSION')
 assert __version__ != ""
 
-__project__ = "pitop.display"
+__project__ = "pitop.common"
 __author__ = "pi-top"
 __author_email__ = "deb-maintainers@pi-top.com"
 
@@ -40,7 +40,16 @@ __keywords__ = [
 ]
 
 __requires__ = [
-    f"pitop.common=={__version__}",
+    # For reviewing DHCP leases
+    "isc_dhcp_leases>=0.9.1,<0.10.0",
+    # For network interface checking
+    "netifaces>=0.10.4,<0.11.0",
+    # For journal logging
+    "systemd-python>=234,<235",
+    # SMBusDevice (PMA)
+    "smbus2>=0.4.0,<0.5.0",
+    # Device Communication
+    "pyzmq>=17.1.2,<17.2.0",
 ]
 
 

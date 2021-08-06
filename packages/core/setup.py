@@ -40,7 +40,7 @@ __keywords__ = [
 ]
 
 __requires__ = [
-    "pitopcommon>=0.8.8,<0.9.0",
+    f"pitop.common=={__version__}",
     "Pillow>=5.4.0,<5.5",
     "numpy>=1.16.0,<1.17",
 ]

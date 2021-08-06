@@ -40,12 +40,12 @@ __keywords__ = [
 ]
 
 __requires__ = [
+    f"pitop.common=={__version__}",
     f"pitop.battery={__version__}",
     f"pitop.system={__version__}",
     f"pitop.display={__version__}",
     f"pitop.pma={__version__}",
     f"pitop.miniscreen={__version__}",
-    "pitopcommon>=0.8.8,<0.9.0",
 ]
 
 __entry_points__ = {

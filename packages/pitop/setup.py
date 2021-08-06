@@ -48,6 +48,7 @@ __requires__ = [
     ###############
     # Subpackages #
     ###############
+    f"pitop.common=={__version__}",
     f"pitop.system=={__version__}",
     f"pitop.core=={__version__}",
     f"pitop.pma=={__version__}",
@@ -55,11 +56,6 @@ __requires__ = [
     f"pitop.keyboard=={__version__}",
     f"pitop.robotics=={__version__}",
     f"pitop.processing=={__version__}",
-
-    ####################################
-    # Utilities - functions, IDs, etc. #
-    ####################################
-    "pitopcommon>=0.8.8,<0.9.0",
 
     #########
     # PROTO #
