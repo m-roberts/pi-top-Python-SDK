@@ -1,3 +1,100 @@
+pi-top-python-sdk (0.29.0-2) bullseye; urgency=medium
+
+  * [pre-commit.ci] pre-commit autoupdate (#499)
+  * [pre-commit.ci] pre-commit autoupdate (#502)
+  * [pre-commit.ci] pre-commit autoupdate (#506)
+  * Updated master workflow files
+  * [pre-commit.ci] pre-commit autoupdate (#507)
+  * Add signing key and passphrase to deb_release workflow
+  * Fix function names and params when calling miniscreen assistant (#509)
+  * Filter devices connected to a pi-top by network (#508)
+  * Set output of command runner to english (#510)
+  * [pre-commit.ci] pre-commit autoupdate (#512)
+  * Add missing `distutils` dependency (#513)
+  * Add pull request template
+  * Update PR template to track Github issues
+  * New changelog entry: v0.22.0-1 (#500)
+  * Improve EncoderMotor class error messages (#515)
+  * Re-enable test CI runs (#516)
+  * New changelog entry: v0.23.0-1 (#517)
+  * Remove distutils dependency (#519)
+  * Fix pyinput references (#518)
+  * Add helper to get pi-top IP address (#521)
+  * [pre-commit.ci] pre-commit autoupdate (#523)
+  * Fix D7 port secondary GPIO pin (#524)
+  * Improve SDK test coverage (#522)
+  * [pre-commit.ci] pre-commit autoupdate (#525)
+  * New changelog entry: v0.24.0-1 (#520)
+  * fix: changelog (#528)
+  * Add module folder to sys.path (#530)
+  * fix: update forgotten version number file (#531)
+  * New changelog entry: v0.24.1-1 (#532)
+  * Use PAT when creating release (#533)
+  * New changelog entry: v0.24.1-1 (#534)
+  * Automatically create release on changelog PR merge (#537)
+  * New changelog entry: v0.24.1-2 (#538)
+  * Fix run of release workflow on changelog PR merge
+  * New changelog entry: v0.24.1-3 (#539)
+  * Updated master workflow files
+  * Test runner improvements (#536)
+  * Add OLED & MiniscreenAssistant tests (#541)
+  * fix: sudden exit caused by pyinotify.Notifier.loop daemonize option
+  * Check for image attribute before using it (#546)
+  * Respect newlines in miniscreen.display_text (#547)
+  * Specify V4L camera backend on cv.VideoCapture (#548)
+  * New changelog entry: v0.24.1-4
+  * Update changelog
+  * Set package version using environment variable (#551)
+  * New changelog entry: v0.24.3-1 (#550)
+  * Fix default array and dict parameters
+  * Add close method to Componentable and call it on del
+  * Add BlockPiRover with preconfigured components for Further BlockPi use
+  * [pre-commit.ci] pre-commit autoupdate (#526)
+  * Add switch_user common helpers, drawn from further-link
+  * [pre-commit.ci] auto fixes from pre-commit.com hooks
+  * New changelog entry: v0.25.0-1 (#552)
+  * Detect and raise exception when IMU is used with new Expansion Plate (#555)
+  * Add pygame-based simulation of pi-top hardware
+  * Fix accidental reverts
+  * fix: ignore intentional precommit linter errors (#565)
+  * fix: add pygame to py3dist-overrides and allow use of pygame v1.9.6 (#564)
+  * feat: subpackages (#421)
+  * Depend on i2c-tools-extra
+  * Add functions to manage sections in config files (#559)
+  * Add virtual_hardware as a separate subpackage
+  * Deb build handles converting underscores to dashes in package names
+  * Readd IMU hardware check accidentally removed in 69e9a92
+  * Readd change to i2cping from b8e144f, accidentally removed in 69e9a92
+  * Add switch_user helpers accidentally removed in 69e9a92
+  * [pre-commit.ci] auto fixes from pre-commit.com hooks
+  * Add subpackages missing from main package dependencies
+  * Improve subpackage readmes
+  * Add missing debian control info to battery package
+  * New changelog entry: v0.26.0-1 (#561)
+  * Allow to continue release to PyPI on upload error
+  * Update condition checks to upload packages to PyPI
+  * Add 'virtual_hardware' as dependency for 'pitop' package (#573)
+  * New changelog entry: v0.26.1-1 (#572)
+  * Rename package pitop.virtual_hardware to pitop.simulation (#574)
+  * New changelog entry: v0.26.2-1 (#575)
+  * Fix name of pitopcli package (#576)
+  * New changelog entry: v0.26.3-1 (#577)
+  * Reset miniscreen after pi-topd is initialized (#579)
+  * Update README with development installation instructions (#580)
+  * New changelog entry: v0.27.1-1 (#581)
+  * Update detection of pi user default password (#584)
+  * New changelog entry: v0.28.0-1 (#585)
+  * Handle errors reading when leased IPs (#586)
+  * New changelog entry: v0.29.0-1 (#587)
+  * Build for arm64
+  * Point to fork Debian package building image
+  * Point to forked Debian package building action
+  * Revert "Point to forked Debian package building action"
+  * Point to forked Debian package building action
+  * Point to forked Debian package building action arm64 branch
+
+ -- pi-top <deb-maintainers@pi-top.com>  Tue, 08 Nov 2022 13:04:24 +0000
+
 pi-top-python-sdk (0.29.0-1) bullseye; urgency=medium
 
   * Handle errors reading when leased IPs (#586)
